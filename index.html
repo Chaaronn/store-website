@@ -2,39 +2,316 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>page title</title>
+    <title>t-AI-lored</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font awesome 4 cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- for the nav bar at the top -->
-        <div class="nav-bar-wrapper">
-            <div class="nav-left-side">
-                <div class="home-button">
-                    <a href="index.html">Home</a>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar-wrapper">
+
+                <div class="logo-wrapper">
+                    <img src="images/icons/icon.png" width="70px" alt="icon">
                 </div>
-                <div class="dropdown">
-                    <button onclick="dropDownMenu()" class="dropbtn">Categories</button>
-                    <div id="dropdown" class="dropdown-content">
-                        <a href="#">Mens</a>
-                        <a href="#">Womens</a>
-                        <a href="#">Kids</a>
-                    </div>
+
+                <div class="links-wrapper">
+
+                    <nav>
+                        <!-- unordered list -->
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                        <img src="images/icons/shopping-cart.png" width="30px" height="30px" alt="cart">
+                    </nav>
+
                 </div>
             </div>
 
-            <div class="nav-right-side">
-                <div class="shopping-cart">
-
+            <div class="row">
+                <div class="column2">
+                    <h1>t-AI-lored clothing</h1>
+                    <p>Custom tailored by AI powered robots, these clothes are the future of AI based fashion.</p>
+                    <a href="" class="btn">Find out more &#8594;</a>
                 </div>
+                <div class="column2">
+                    <img src="images/mens/mens1.jpg" >
+                </div>
+            </div>
 
+        </div>
+    </div>
+    <!------- featured category ---------->
+    <div class="featured-categories-wrapper">
+            <div class="row">
+                <div class="featured-categories">
+                    <img src="images/mens/mens2.jpg" alt="custom-jumpers">
+                </div>
+                <div class="featured-categories">
+                    <img src="images/kids/kids1.jpg" alt="kids-clothing">
+                </div>
+                <div class="featured-categories">
+                    <img src="images/womens/womens1.jpg" alt="womens-clothing">
+                </div>
+            </div>
+    </div>
+
+    <!------- featured products ---------->
+    <div class="small-container">
+        <h2 class="featured-title">Featured Products</h2>
+        <div class="row">
+            <div class="featured-products">
+                <img src="images/mens/mens3.jpg" alt="featured1">
+                <h4>Chess AI made shirts</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>£100</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens4.jpg" alt="featured2">
+                <h4>Microbot-Scanned Workout Gear</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>£30</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens5.jpg" alt="featured3">
+                <h4>We also do coats</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                </div>
+                <p>£90</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens6.jpg" alt="featured4">
+                <h4>Sick Webs</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>£240</p>
             </div>
         </div>
+        <!--------------- latest products ------------------->
+        <h2 class='featured-title'>Latest Products</h2>
+        <div class="row">
+            <div class="featured-products">
+                <img src="images/mens/mens3.jpg" alt="latest1">
+                <h4>Chess AI made shirts</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>£100</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens4.jpg" alt="latest2">
+                <h4>Microbot-Scanned Workout Gear</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>£30</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens5.jpg" alt="latest3">
+                <h4>We also do coats</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                </div>
+                <p>£90</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens6.jpg" alt="latest4">
+                <h4>Sick Webs</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>£240</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="featured-products">
+                <img src="images/mens/mens3.jpg" alt="latest5">
+                <h4>Chess AI made shirts</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>£100</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens4.jpg" alt="latest6">
+                <h4>Microbot-Scanned Workout Gear</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>£30</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens5.jpg" alt="latest7">
+                <h4>We also do coats</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                </div>
+                <p>£90</p>
+            </div>
+            <div class="featured-products">
+                <img src="images/mens/mens6.jpg" alt="latest8">
+                <h4>Sick Webs</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>£240</p>
+            </div>
+        </div>
+    </div>
+    <!------------------------------- offer ---------------------------->
+    <div class="offers-wrapper">
+        <div class="small-container">
+            <div class="row">
+                <div class="offer">
+                    <img src="images/offers/offer1.jpg" class='offer-img' alt="offer1">
+                </div>
+                <div class="offer">
+                    <p>You aren't gonna believe this..</p>
+                    <h1>A Suit Made By Robot-Sharks</h1>
+                    <small>Duis scelerisque rutrum orci. Pellentesque eu orci accumsan, blandit felis vel, tempus orci. Maecenas semper ipsum at cursus mattis. 
+                        Praesent id aliquet arcu, non luctus arcu. Aenean mattis quam non vulputate porta. 
+                        Aliquam vestibulum arcu vitae lacus semper viverra. Nam sed maximus orci.<br>
+                    </small>
+                    <a href="" class="btn">See how &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- main bulk of the page content -->
-        <div class="page-content-wrapper">
 
+    <!------------------testimonial section ----------------------->
+    <div class="testimonial-wrapper">
+        <div class="small-container">
+
+            <div class="row">
+                <div class="testimonial">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Pellentesque id mi in mi vulputate blandit in scelerisque massa. Sed in varius orci, vel elementum justo. 
+                        Sed id orci viverra, molestie sapien at, lacinia arcu.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/testimonials/user1.jpg" alt="review-user-1">
+                    <h3>Name Here</h3>
+                </div>
+
+                <div class="testimonial">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Pellentesque id mi in mi vulputate blandit in scelerisque massa. Sed in varius orci, vel elementum justo. 
+                        Sed id orci viverra, molestie sapien at, lacinia arcu.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/testimonials/user2.jpg" alt="review-user-2">
+                    <h3>Name here</h3>
+                </div>
+                <div class="testimonial">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Pellentesque id mi in mi vulputate blandit in scelerisque massa. Sed in varius orci, vel elementum justo. 
+                        Sed id orci viverra, molestie sapien at, lacinia arcu.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/testimonials/user3.jpg" alt="review-user-3">
+                    <h3>Name here</h3>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+<!-- img refs -->
+
+<!-- 
+    
+    cart & logo icon - https://www.flaticon.com/authors/kiranshastry 
+
+    all clothing photos taken from - https://unsplash.com/
+
+    stars are https://fontawesome.com/v4.7.0/icon/star 
+        and https://fontawesome.com/v4.7.0/icon/star-o
+    
+    quotes are https://fontawesome.com/v4.7.0/icon/quote-left
+
+-->

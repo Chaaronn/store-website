@@ -1,67 +1,267 @@
-/* --------------------- Dropdown menu ---------------- */
-.dropbtn {
-    background-color: grey;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+/* -------------- GLOBAL ----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* dropdown button on hover and focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: grey;
-}
-
-/* Needed to position the content inside the div */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* content of the dropdown which is hidden by default */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lavender;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* links inside the dropdown */
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
+/* links */
+a {
     text-decoration: none;
-    display: block;
+    color: #555;
 }
 
-/* change colour of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: grey;
+/* paragraphs */
+p {
+    color: #555;
 }
 
-/* show menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+.container {
+    max-width: 1800px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* change backgroun colour of the button when content shown */
-.dropdown:hover .dropbtn {
-    background-color: black;
+body {
+    font-family: 'Sarabun', sans-serif;
 }
 
-/* ---------------------------------- Nav Bar Styles --------------------------- */
-.home-button {
-    background-color: grey;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+small {
+    color: #555;
 }
 
-.nav-left-side {
+/* ---------------HEADER------------------- */
+
+.header {
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+/* ---------------NAVBAR ------------------ */
+
+.navbar-wrapper {
     display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.links-wrapper {
+    /* move links to the right */
+    flex: 1;
+    text-align: right;
+}
+
+/* all nav bar links */
+.links-wrapper ul {
+    /* display next to each other */
+    display: inline-block;
+    /* hide bullet points */
+    list-style-type: none;
+
+}
+
+/* links in menu */
+.links-wrapper ul li {
+
+    display: inline-block;
+    margin-right: 20px ;
+}
+
+/* ---------------- content ---------------------- */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column2 {
+    /* ensure both columns have equal space */
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.column2 img {
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.column2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    /* needed for hover animation */
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+/*----------------- featured -------------------*/
+.featured-categories-wrapper {
+    margin: 70px 0;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.featured-categories {
+    flex: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/* img of featured categories */
+.featured-categories img {
+    width: 100%;
+    height: 1000px;
+}
+
+.featured-products {
+    /* four rows so 25% */
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    /* add transition on transform in hover */
+    transition: transform 0.5s;
+}
+
+/* img of featured products */
+.featured-products img {
+    width: 100%;
+    min-height: 400px;
+}
+
+/* featured products title */
+.featured-title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+/* underline title */
+.featured-title::after {
+    /* no text */
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    /* on bottom */
+    bottom: 0;
+    left: 50%;
+    /* place on the centre of the x axis */
+    transform: translateX(-50%);
+}
+
+/* featured prodcut title */
+.h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+/* price of featured products */
+.featured-products p {
+    font-size: 14px;
+}
+
+/* stars */
+.rating .fa {
+    color: #ff523b;
+}
+
+.featured-products:hover {
+    transform: translateY(-5px);
+}
+
+/*------------ Offers -------------------  */
+
+.offer {
+    /* ensure both columns have equal space */
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.offer img {
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 50px;
+}
+
+.offer p {
+    padding-bottom: 10px;
+}
+
+.offer h1 {
+    padding-bottom: 10px;
+}
+
+.offers-wrapper {
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+/*---------------- Testimonial ------------------  */
+.testimonial-wrapper {
+    padding-top: 100px;
+
+}
+
+.testimonial {
+    flex: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 40px 20px;
+    text-align: center;
+    /* add a shadow around the container */
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+/* img of featured categories */
+.testimonial img {
+    width: 50px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+.testimonial:hover{
+    transform: translateY(-10px);
+}
+
+/* change the quote icon */
+.fa.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
 }
