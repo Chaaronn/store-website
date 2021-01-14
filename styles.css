@@ -16,6 +16,7 @@ p {
     color: #555;
 }
 
+/* general container */
 .container {
     max-width: 1800px;
     margin: auto;
@@ -23,12 +24,21 @@ p {
     padding-right: 20px;
 }
 
+/* body text */
 body {
     font-family: 'Sarabun', sans-serif;
 }
 
+/* small text */
 small {
     color: #555;
+}
+
+/* links */
+ul {
+    /* hide bullet points */
+    list-style-type: none;
+
 }
 
 /* ---------------HEADER------------------- */
@@ -59,9 +69,6 @@ small {
 .links-wrapper ul {
     /* display next to each other */
     display: inline-block;
-    /* hide bullet points */
-    list-style-type: none;
-
 }
 
 /* links in menu */
@@ -275,4 +282,70 @@ small {
 .testimonial h3 {
     font-weight: 600;
     color: #555;
+}
+
+/*------------- bottom logos/brands ----------------- */
+
+.brands-wrapper {
+    margin: 100px auto;
+}
+
+.column5 {
+    width: 50px;
+}
+
+.column5 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/*------------------footer ------------------ */
+.footer-wrapper {
+    background: #111111;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer-wrapper p{
+    color: #8a8a8a;
+}
+
+.footer-wrapper h3 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.footer-column1, .footer-column3, .footer-column4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-column1 {
+    flex-basis: 30%;
+}
+
+.footer-column2 {
+    min-width: 100px;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-column2 img {
+    width: 150px;
+    padding-bottom: 20px;
+}
+
+.footer-column3, .footer-column4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.promise-logo {
+    margin-top: 20px;
+}
+
+.promise-logo img {
+    width: 100px;
 }
