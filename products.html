@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>t-AI-lored</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font awesome 4 cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!---------------------------- header ------------------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-wrapper">
+
+                <div class="logo-wrapper">
+                    <img src="images/icons/icon.png" width="70px" alt="icon">
+                </div>
+
+                <div class="links-wrapper">
+
+                    <nav>
+                        <!-- unordered list -->
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                        <img src="images/icons/shopping-cart.png" width="30px" height="30px" alt="cart">
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- featured category ---------->
+    <div class="content-wrapper">
+        <div class="products-wrapper">
+
+            <div class="product-item-wrapper">  
+                <div class="product-img-bg" style="background-image:url(images/mens/mens1.jpg)"></div>
+
+                <!-- everything on top of the image -->
+                <div class="img-txt-wrapper">
+                    <!-- small img on top -->
+                    <div class="logo-wrapper">
+                        <img src="images/icons/crondose.png" alt="icon-1">
+                    </div>
+                    <!-- text visible on hover -->
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="product-item-wrapper">
+                <div class="product-img-bg" style="background-image:url(images/mens/mens2.jpg)"></div>
+                <div class="img-txt-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/icons/dailysmarty.png" alt="icon-2">
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="product-item-wrapper">
+                <div class="product-img-bg" style="background-image:url(images/mens/mens3.jpg)"></div>
+                <div class="img-txt-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/icons/devcamp.png" alt="icon-3">
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="product-item-wrapper">
+                <div class="product-img-bg" style="background-image:url(images/womens/womens1.jpg)"></div>
+                <div class="img-txt-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/icons/devtrunk.png" alt="icon-2">
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="product-item-wrapper">
+                <div class="product-img-bg" style="background-image:url(images/mens/mens5.jpg)"></div>
+                <div class="img-txt-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/icons/open-devos.png" alt="icon-2">
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="product-item-wrapper">
+                <div class="product-img-bg" style="background-image:url(images/mens/mens6.jpg)"></div>
+                <div class="img-txt-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/icons/shop-hacker.png" alt="icon-2">
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column1">
+                    <h3>Fullfilment Promise</h3>
+                    <p>basically not gonna cheat ye outta money</p>
+                    <div class="promise-logo">
+                        <img src="/images/icons/lock.png" alt="lock-icon">
+                        <img src="/images/icons/key.png" alt="key-icon">
+                    </div>
+                </div>
+                <div class="footer-column2">
+                    <img src="/images/icons/icon.png" alt="long image best">
+                    <p>Sed lacinia ipsum ac velit consectetur, ut luctus odio ullamcorper. Fusce at sagittis risus.</p>
+                </div>
+                <div class="footer-column3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Discount Codes</li>
+                        <li>Returns</li>
+                        <li>Blog</li>
+                        <li>Join</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <p class='author'>Matt Voce - 2021 - Lockdown Tings</p>
+        </div>
+    </div>
+</body>
+<script>
+    //tested in google chrome
+    //get all product squares
+    const productItems = document.querySelectorAll('.product-item-wrapper')
+
+    productItems.forEach(element => {
+
+
+        //add a listener to each element for hovering
+        element.addEventListener('mouseover', () => {
+            //look for the product-img-bg node
+            console.log(element.childNodes[1].classList);
+            //add img-darken
+            element.childNodes[1].classList.add('img-darken');
+        })
+
+        //remove img darken
+        element.addEventListener('mouseout', () => {
+            element.childNodes[1].classList.remove('img-darken');
+        })
+
+    });
+</script>
+</html>
+
+<!-- img refs -->
+
+<!--
+
+
+
+
+-->

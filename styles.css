@@ -41,6 +41,14 @@ ul {
 
 }
 
+/* used for every section & maybe should change to flexbox */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 /* ---------------HEADER------------------- */
 
 .header {
@@ -48,7 +56,7 @@ ul {
 }
 
 .header .row {
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 /* ---------------NAVBAR ------------------ */
@@ -56,7 +64,7 @@ ul {
 .navbar-wrapper {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px 0;
 }
 
 .links-wrapper {
@@ -79,12 +87,7 @@ ul {
 }
 
 /* ---------------- content ---------------------- */
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
 
 .column2 {
     /* ensure both columns have equal space */
@@ -94,7 +97,7 @@ ul {
 
 .column2 img {
     max-width: 100%;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 0px;
     padding-right: 0px;
@@ -304,7 +307,7 @@ ul {
     background: #111111;
     color: #8a8a8a;
     font-size: 14px;
-    padding: 60px 0 20px;
+    padding: 30px 0 20px;
 }
 
 .footer-wrapper p{
@@ -348,4 +351,68 @@ ul {
 
 .promise-logo img {
     width: 100px;
+}
+
+/*-------------- Products Page  ------------------*/
+
+/* all squares */
+.products-wrapper {
+    display: grid;
+    /* columns */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* individual square */
+.product-item-wrapper {
+    position: relative;
+}
+
+/* background img for the squares */
+.product-img-bg {
+    height: 350px;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* contains text & img to be on top of bg */
+.img-txt-wrapper {
+    position: absolute;
+    /* display at top */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* small img on top */
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* prepare for anim */
+.img-txt-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-txt-wrapper:hover .subtitle {
+    color: #ff523b;
+}
+
+/* JS will be adding this dynamically to darken the imgs */
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
 }
